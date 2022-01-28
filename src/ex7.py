@@ -1,5 +1,7 @@
 from utils.inputs import int_input
 
+__title__ = "Fibonacci"
+
 def fibonacci(n: int) -> int:
 	"""
 	Calcule le n-ième nombre de la suite de Fibonacci.
@@ -15,7 +17,7 @@ def fibonacci(n: int) -> int:
 
 def ex7() -> None:
 	"""
-	Écrire une fonction calculant le nombre de Fibonacci d’un nombre
+	Écrire une fonction calculant le nombre de Fibonacci d’un nombre.
 	:return: None
 	:rtype: None
 	"""

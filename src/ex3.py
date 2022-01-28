@@ -1,5 +1,7 @@
 from utils.inputs import float_input
 
+__title__ = "Résoudre une équation du second degré"
+
 def ex3() -> None:
 	"""
 	Le but est de résoudre une équation du second degré.

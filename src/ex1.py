@@ -1,5 +1,7 @@
 from utils.inputs import int_input
 
+__title__ = "Le plus grand"
+
 def ex1() -> None:
 	"""
 	Écrire un algorithme qui demande successivement 10 nombres à

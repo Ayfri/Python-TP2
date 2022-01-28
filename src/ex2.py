@@ -2,6 +2,8 @@ import math
 
 from utils.inputs import int_input
 
+__title__ = "Le Tiercé"
+
 def ex2() -> None:
 	"""
 	Écrire un algorithme qui permette de connaître ses chances de gagner au tiercé, quarté, quinté
