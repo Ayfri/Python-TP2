@@ -12,8 +12,8 @@ def ex1() -> None:
 	:rtype: None
 	"""
 	array = [int_input(f"Entrez le nombre n°{i} : ") for i in range(1, 11)]
-	print(f"""Le plus grand de ces nombres est : {max(array)}
-C'était le numéro {array.index(max(array))}""")
+	print(f"Le plus grand de ces nombres est : {max(array)}\n"
+	      f"C'était le numéro {array.index(max(array))}")
 
 if __name__ == "__main__":
 	ex1()

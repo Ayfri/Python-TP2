@@ -22,6 +22,5 @@ def ex3() -> None:
 		x2: float = (-b + delta ** 0.5) / (2 * a)
 		print(f"L'équation admet deux solutions : {x1} et {x2}")
 
-
 if __name__ == '__main__':
 	ex3()

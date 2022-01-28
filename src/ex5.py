@@ -40,8 +40,8 @@ def ex5() -> None:
     b: float = int_input("Entrez b :")
     p: float = float_input("Entrez p :")
 
-    print(f"""Calcul de l'intégrale avec la fonction f(x) = x * x avec {a} <= x et b < {5} et p = {0.4}.
-    Résultat: {integrate(a, b, p)}""")
+    print(f"Calcul de l'intégrale avec la fonction f(x) = x * x avec {a} <= x et b < {5} et p = {0.4}.\n"
+          f"Résultat: {integrate(a, b, p)}")
 
 if __name__ == '__main__':
     ex5()
