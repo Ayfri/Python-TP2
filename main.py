@@ -1,3 +1,4 @@
+import sys
 from typing import Callable
 
 from inputs import int_input
@@ -31,7 +32,7 @@ def main() -> None:
 			input("Appuyez sur ENTRÉE pour continuer...")
 		except:
 			print("\nAu revoir :)")
-			exit(1)
+			sys.exit(1)
 
 if __name__ == '__main__':
 	main()
