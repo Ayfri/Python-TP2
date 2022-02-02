@@ -24,13 +24,13 @@ def main() -> None:
 	while True:
 		print_menu()
 		try:
-			input1: int = int_input("Veuillez choisir un exercice :", 1, lambda i: 7)
+			input1: int = int_input("Veuillez choisir un exercice :", 1, lambda i: 8)
 			exercice = get_exercice(input1)
 			print(f"Consigne: {get_instructions_from_docstring(exercice)}\n")
 			exercice[2]()
 			input("Appuyez sur ENTRÉE pour continuer...")
 		except:
-			print("Au revoir :)")
+			print("\nAu revoir :)")
 			exit(1)
 
 if __name__ == '__main__':
