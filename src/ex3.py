@@ -13,7 +13,9 @@ def ex3() -> None:
 	a: float = float_input("Entrez A : ")
 	b: float = float_input("Entrez B : ")
 	c: float = float_input("Entrez C : ")
-
+	if a + b + c == 0:
+		print_result("L'équation est indéterminée.")
+		return
 	delta = b ** 2 - 4 * a * c
 	if delta < 0:
 		print_result("L'équation n'admet pas de solution.")
