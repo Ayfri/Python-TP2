@@ -1,5 +1,5 @@
 import math
-from utils.inputs import int_input
+from utils.inputs import float_input, int_input
 from utils.prints import print_result
 
 __title__ = "Développement limité"
@@ -72,7 +72,7 @@ def ex6() -> None:
 	"""
 	while True:
 		try:
-			i = int_input("Entrez un nombre entier : ")
+			i = float_input("Entrez un nombre entier : ")
 			print_result(f"Via l'algorithme : e^{i} = {exp(i)}")
 			print(f"math.exp(i) = {math.exp(i)}")
 			print_result(f"Via l'algorithme : sin({i}) = {sinus(i)}")
