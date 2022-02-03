@@ -35,12 +35,12 @@ def function(x: float) -> float:
 def ex5() -> None:
 	"""
 	Faire un script qui calcule la surface sous la courbe de la fonction y = x * x
-	avec des rectangles avec x appartient à [a,b] et un pas p*.
+	avec des rectangles avec x appartient à [a, b] et un pas p*.
 	:return: None
 	:rtype: None
 	"""
-	a: float = int_input("Entrez a : ")
-	b: float = int_input("Entrez b : ")
+	a: int = int_input("Entrez a : ")
+	b: int = int_input("Entrez b : ")
 	p: float = float_input("Entrez p : ")
 
 	print_result(f"Calcul de l'intégrale avec la fonction f(x) = x * x avec {a} <= x et b < {5} et p = {0.4}.\n"
