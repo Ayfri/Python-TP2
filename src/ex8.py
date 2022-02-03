@@ -12,7 +12,12 @@ def sequence(n: int) -> float:
 	:return: Valeur de la suite O(n).
 	:rtype: float
 	"""
-	return n if n <= 1 else fibonacci(n + 1) / fibonacci(n)
+	if n <= 1:
+		return n
+	for i in range(2, n + 1):
+		if i % 5 == 0 or i == n:
+			print(f"O[{i}] = {fibonacci(i + 1) / fibonacci(i)}")
+	return fibonacci(n + 1) / fibonacci(n)
 
 def ex8() -> None:
 	"""
