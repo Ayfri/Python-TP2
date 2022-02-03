@@ -14,10 +14,10 @@ def ex4() -> None:
 	:rtype: None
 	"""
 
-	n = int_input()
-	r1 = math.sqrt(2)
-	rn = r1
-	length = int(math.log10(n))
+	n: int = int_input()
+	r1: float = math.sqrt(2)
+	rn: float = r1
+	length: int = int(math.log10(n))
 	print(f"R1 = {r1}")
 	for i in range(1, n + 1):
 		if i % 10 ** length == 0 and i > 1:

@@ -4,7 +4,8 @@ from typing import Callable
 def int_input(
 		text: str = "Entrez un nombre : ",
 		min_number: int = -sys.maxsize,
-		max_number: Callable[[int], int] = lambda i: sys.maxsize
+		max_number: Callable[[int], int] = lambda i: sys.maxsize,
+		canStop: bool = False
 ) -> int:
 	"""
 	Fonction permettant de demander à l'utilisateur d'entrer un entier dans un intervalle
@@ -15,12 +16,17 @@ def int_input(
 	:type min_number: int
 	:param max_number: Entier maximum autorisé.
 	:type max_number: Callable[[int], int]
+	:param canStop: Booléen indiquant si l'utilisateur peut arrêter l'exécution de l'input.
+	:type canStop: bool
 	:returns Entier saisi par l'utilisateur.
 	:type: int
 	"""
 	while True:
 		try:
-			i: int = int(input(text))
+			inp: str = input(text)
+			if canStop and inp.lower() == "stop":
+				raise KeyboardInterrupt
+			i: int = int(inp)
 			max_result = max_number(i)
 		except ValueError:
 			print("Veuillez saisir un entier valide.")

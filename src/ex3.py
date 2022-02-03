@@ -9,9 +9,9 @@ def ex3() -> None:
 	:return:
 	:rtype:
 	"""
-	a = float_input("Entrez A : ")
-	b = float_input("Entrez B : ")
-	c = float_input("Entrez C : ")
+	a: float = float_input("Entrez A : ")
+	b: float = float_input("Entrez B : ")
+	c: float = float_input("Entrez C : ")
 
 	delta = b ** 2 - 4 * a * c
 	if delta < 0:

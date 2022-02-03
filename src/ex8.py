@@ -11,9 +11,7 @@ def sequence(n: int) -> float:
 	:return: Valeur de la suite O(n).
 	:rtype: float
 	"""
-	if n <= 1:
-		return n
-	return fibonacci(n + 1) / fibonacci(n)
+	return n if n <= 1 else fibonacci(n + 1) / fibonacci(n)
 
 def ex8() -> None:
 	"""
