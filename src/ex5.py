@@ -1,4 +1,5 @@
 from utils.inputs import float_input, int_input
+from utils.prints import print_result
 
 __title__ = "Calcul de Surface"
 
@@ -42,7 +43,7 @@ def ex5() -> None:
 	b: float = int_input("Entrez b : ")
 	p: float = float_input("Entrez p : ")
 
-	print(f"Calcul de l'intégrale avec la fonction f(x) = x * x avec {a} <= x et b < {5} et p = {0.4}.\n"
+	print_result(f"Calcul de l'intégrale avec la fonction f(x) = x * x avec {a} <= x et b < {5} et p = {0.4}.\n"
 	      f"Résultat: {integrate(a, b, p)}")
 
 if __name__ == '__main__':

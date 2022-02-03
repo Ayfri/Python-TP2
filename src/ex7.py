@@ -1,4 +1,5 @@
 from utils.inputs import int_input
+from utils.prints import print_result
 
 __title__ = "Fibonacci"
 
@@ -23,7 +24,7 @@ def ex7() -> None:
 	"""
 	number: int = int_input("Entrez n : ")
 	result: int = fibonacci(number)
-	print(f"Fibonacci de {number} est {result} : F[{number}] = {result}")
+	print_result(f"Fibonacci de {number} est {result} : F[{number}] = {result}")
 
 if __name__ == '__main__':
 	ex7()

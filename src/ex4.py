@@ -1,6 +1,7 @@
 import math
 
 from utils.inputs import int_input
+from utils.prints import print_result
 
 __title__ = "Programmer une suite"
 
@@ -23,7 +24,7 @@ def ex4() -> None:
 		if i % 10 ** length == 0 and i > 1:
 			print(f"R{i} = {rn}")
 		rn = math.sqrt(2 + rn)
-	print(f"Le résultat de R[{n}] est {rn}.")
+	print_result(f"Le résultat de R[{n}] est {rn}.")
 
 if __name__ == "__main__":
 	ex4()

@@ -1,6 +1,7 @@
 from typing import List
 
 from utils.inputs import int_input
+from utils.prints import print_result
 
 __title__ = "Le plus grand"
 
@@ -16,7 +17,7 @@ def ex1() -> None:
 	:rtype: None
 	"""
 	array: List[int] = [int_input(f"Entrez le nombre n°{i} : ") for i in range(1, 11)]
-	print(f"Le plus grand de ces nombres est : {max(array)}\n"
+	print_result(f"Le plus grand de ces nombres est : {max(array)}\n"
 	      f"C'était le numéro {array.index(max(array))}")
 
 if __name__ == "__main__":
