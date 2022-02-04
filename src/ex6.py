@@ -6,11 +6,11 @@ __title__ = "Développement limité"
 
 nMax: int = 50
 
-def f(x: int, n: int) -> int:
+def f(x: float, n: int) -> float:
 	"""
 	Calcule la valeur de la fonction f(x, n) pour la fonction cosinus.
 	:param x: Valeur de x.
-	:type x: int
+	:type x: float
 	:param n: Valeur de n.
 	:type n: int
 	:return: La valeur de la fonction f(x, n) pour la fonction cosinus.
@@ -18,11 +18,11 @@ def f(x: int, n: int) -> int:
 	"""
 	return (x ** n) / math.factorial(n)
 
-def exp(x: int) -> int:
+def exp(x: float) -> float:
 	"""
 	Calcule l'exponentielle de x.
 	:param x: Valeur de x.
-	:type x: int
+	:type x: float
 	:return: L'exponentielle de x.
 	:rtype: int
 	"""
@@ -34,31 +34,31 @@ def exp(x: int) -> int:
 		n += 1
 	return result
 
-def f2(x: int, n: int) -> int:
+def f2(x: float, n: int) -> float:
 	"""
 	Calcule la valeur de la fonction f(x, n) pour la fonction sinus.
 	:param x: Valeur de x.
-	:type x: int
+	:type x: float
 	:param n: Valeur de n.
 	:type n: int
 	:return: La valeur de la fonction f(x, n) pour la fonction sinus.
 	:rtype: int
 	"""
-	first_product = (-1) ** (n - 1)
-	nominator = (x ** (2 * n - 1))
-	denominator = math.factorial((2 * n) - 1)
+	first_product: float = (-1) ** (n - 1)
+	nominator: float = (x ** (2 * n - 1))
+	denominator: float = math.factorial((2 * n) - 1)
 	return first_product * (nominator / denominator)
 
-def sinus(x: int) -> int:
+def sinus(x: float) -> float:
 	"""
 	Calcule le sinus de x.
 	:param x: Valeur de x.
-	:type x: int
+	:type x: float
 	:return: Le sinus de x.
 	:rtype: int
 	"""
-	n = 1
-	result = x
+	n: int = 1
+	result: float = x
 	while n < nMax:
 		n += 1
 		result += f2(x, n)
@@ -72,7 +72,7 @@ def ex6() -> None:
 	"""
 	while True:
 		try:
-			i = float_input("Entrez un nombre entier : ")
+			i: float = float_input("Entrez un nombre entier : ")
 			print_result(f"Via l'algorithme : e^{i} = {exp(i)}")
 			print(f"math.exp(i) = {math.exp(i)}")
 			print_result(f"Via l'algorithme : sin({i}) = {sinus(i)}")
